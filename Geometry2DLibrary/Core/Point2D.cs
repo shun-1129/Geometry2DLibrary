@@ -43,37 +43,36 @@
         public Vector2D ToVector () => new ( X , Y );
 
         /// <summary>
-        /// 
+        /// ポイントとベクトルの加算を行う
         /// </summary>
-        /// <param name="point"></param>
-        /// <param name="vector"></param>
-        /// <returns></returns>
+        /// <param name="point">ポイント</param>
+        /// <param name="vector">ベクトル</param>
+        /// <returns>加算されたポイント</returns>
         public static Point2D operator + ( Point2D point , Vector2D vector )
             => new ( point.X + vector.X , point.Y + vector.Y );
 
         /// <summary>
-        /// 
+        /// ポイントとベクトルの減算を行う
         /// </summary>
-        /// <param name="point"></param>
-        /// <param name="vector"></param>
-        /// <returns></returns>
+        /// <param name="point">ポイント</param>
+        /// <param name="vector">ベクトル</param>
+        /// <returns>減算されたポイント</returns>
         public static Point2D operator - ( Point2D point , Vector2D vector )
             => new ( point.X - vector.X , point.Y - vector.Y );
 
         /// <summary>
-        /// 
+        /// ポイントを減算してベクトルを返す
         /// </summary>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
+        /// <param name="left">左辺</param>
+        /// <param name="right">右辺</param>
+        /// <returns>ベクトル</returns>
         public static Vector2D operator - ( Point2D left , Point2D right )
             => new ( left.X - right.X , left.Y - right.Y );
 
         /// <summary>
-        /// 
+        /// 文字列に変換する
         /// </summary>
-        /// <returns></returns>
-        public override string ToString ()
-            => $"({X}, {Y})";
+        /// <returns>文字列</returns>
+        public override string ToString () => $"({X}, {Y})";
     }
 }
