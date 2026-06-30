@@ -1,1 +1,1 @@
-# 2DGeometryLibrary
+# Geometry2DLibrary
